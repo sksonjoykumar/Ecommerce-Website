@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <!-- =============== css link ===================== -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./Images/fav.png" type="image/x-icon" />
+    <!-- =================== CdN link ================= -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- =================== fontAwesome Link  ======== -->
+    <script
+      src="https://kit.fontawesome.com/8d424f8808.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- JS Link  -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- ========= Navbar Section Start Here ============= --> 
+    <section
+      class="navbar navbar-expand-md main-navbar-container fixed-top top-0"
+    >
+      <nav class="container">
+        <h2><a href="./index.html" class="navbar-brand">Shopping</a></h2>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end gap-5"
+          id="navContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link act">Home</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./shop.html" class="nav-link">Shop</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./blog.html" class="nav-link">Blog</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link">About</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./add-to-card.html"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="close">
+            <i class="fa-solid fa-xmark" id="close-btn"></i>
+          </div>
+        </div>
+        <div class="mobile">
+          <i class="fa-solid fa-bars" id="menu-btn"></i>
+          <!-- <i class="fa-solid fa-xmark" id="close-btn"></i> -->
+        </div>
+      </nav>
+    </section>
+    <!-- ========= Navbar Section End Here ============= -->
+    <!-- ========= Heading Section Start Here ============= -->
+    <div class="heading-section">
+      <div class="container text-container">
+        <h5>Trade-in-offer</h5>
+        <h1>Super value deal</h1>
+        <h1 class="heading">On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button type="button">
+          <a href="./shop.html" class="text-decoration-none text-light"
+            >Shop Now</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <!-- ========= Heading Section End Here ============= -->
+    <!-- ========= Shopping Categories Section Start Here ===========-->
+    <section class="container shopping-categories-container">
+      <div class="row">
+        <div class="col-md-2 mb-4">
+          <div class="card">
+            <img src="./Images/features/f1.png" alt="" />
+            <button type="button" class="btn-1">Free Shopping</button>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <div class="card">
+            <img src="./Images/features/f2.png" alt="" />
+            <button type="button" class="btn-2">Online Order</button>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <div class="card">
+            <img src="./Images/features/f3.png" alt="" />
+            <button type="button" class="3">Save Money</button>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <div class="card">
+            <img src="./Images/features/f4.png" alt="" />
+            <button type="button" class="btn-4">Promotions</button>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <div class="card">
+            <img src="./Images/features/f5.png" alt="" />
+            <button type="button" class="btn-5">Happy Sell</button>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <div class="card">
+            <img src="./Images/features/f6.png" alt="" />
+            <button type="button" class="btn-6">F24/7 Support</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= Shopping Categories Section End Here ===========-->
+
+    <!-- ========= Features Products Section Start Here ===========-->
+    <div class="container features-products-section">
+      <div class="text-data">
+        <h1>Features Products</h1>
+        <p>Summer Collection New Modern Design</p>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f1.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f2.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f3.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f4.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f2.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f6.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f7.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f8.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f1.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f2.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f3.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a
+            href="/All-Products-Page/product-1.html"
+            class="text-decoration-none"
+          >
+            <div class="card">
+              <img src="./Images/products/f4.jpg" alt="img" />
+              <div class="product-data">
+                <span>adidas</span>
+                <p>Cotton Astronaut T-Shirts</p>
+                <p class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="price">
+                  <p>$45.00</p>
+                  <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ========= Features Products Section End Here ===========-->
+    <!-- ========= All Shirts Accessories Section Start Here ===========-->
+    <section class="all-shirts-accessories">
+      <div class="container">
+        <div class="text-container">
+          <h5>Repair Serveries</h5>
+          <h1>Up to <span>70% Off </span>- All Shirts & Accessories</h1>
+          <button type="button">Explore More</button>
+        </div>
+      </div>
+    </section>
+    <!-- ========= All Shirts Accessories Section End Here ===========-->
+
+    <!-- ========= New Arrivals Section Start Here ===========-->
+    <div class="container arrival-container">
+      <div class="arrival-data">
+        <h1>New Arrivals</h1>
+        <p>Summer Collection New Modern Design</p>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="./Images/products/f4.jpg" alt="img" />
+            <div class="product-data">
+              <span>adidas</span>
+              <p>Cotton Astronaut T-Shirts</p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <div class="price">
+                <p>$45.00</p>
+                <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="./Images/products/f5.jpg" alt="img" />
+            <div class="product-data">
+              <span>adidas</span>
+              <p>Cotton Astronaut T-Shirts</p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <div class="price">
+                <p>$45.00</p>
+                <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="./Images/products/f6.jpg" alt="img" />
+            <div class="product-data">
+              <span>adidas</span>
+              <p>Cotton Astronaut T-Shirts</p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <div class="price">
+                <p>$45.00</p>
+                <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="./Images/products/f7.jpg" alt="img" />
+            <div class="product-data">
+              <span>adidas</span>
+              <p>Cotton Astronaut T-Shirts</p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <div class="price">
+                <p>$45.00</p>
+                <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="./Images/products/f8.jpg" alt="img" />
+            <div class="product-data">
+              <span>adidas</span>
+              <p>Cotton Astronaut T-Shirts</p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <div class="price">
+                <p>$45.00</p>
+                <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="./Images/products/f3.jpg" alt="img" />
+            <div class="product-data">
+              <span>adidas</span>
+              <p>Cotton Astronaut T-Shirts</p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <div class="price">
+                <p>$45.00</p>
+                <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="./Images/products/f4.jpg" alt="img" />
+            <div class="product-data">
+              <span>adidas</span>
+              <p>Cotton Astronaut T-Shirts</p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <div class="price">
+                <p>$45.00</p>
+                <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="./Images/products/f4.jpg" alt="img" />
+            <div class="product-data">
+              <span>adidas</span>
+              <p>Cotton Astronaut T-Shirts</p>
+              <p class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <div class="price">
+                <p>$45.00</p>
+                <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========= New Arrivals Section End Here ===========-->
+    <!-- ========= Two Banner Section Start Here ===========-->
+    <section class="container banner-container">
+      <div class="row row-container">
+        <div class="col-md-6 mb-4">
+          <div class="first-banner">
+            <div class="text-warper">
+              <h4>crazy deals</h4>
+              <h1>buy 1 get 1 free</h1>
+              <p>The best classic dress is on sale at Shopping</p>
+              <button type="button">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 card-item-two">
+          <div class="second-banner">
+            <div class="text-warper-two">
+              <h4>sping/ summer</h4>
+              <h1>UPCOMING SEASON</h1>
+              <p>The best classic dress is on sale at Shopping</p>
+              <button type="button">Collection</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= Two Banner Section End Here ===========-->
+    <!-- ========= Three Banner Section Start Here =========== -->
+    <section class="container three-banner-section-container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="banner-warper-1">
+            <div class="text-data-warper">
+              <h2>SEASONAL SALE</h2>
+              <h3>Winter Collection -30% Off</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="banner-warper-2">
+            <div class="text-data-warper">
+              <h2>NEW FOOTWEAR COLLECTION</h2>
+              <h3>Sping / Summer 2024</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="banner-warper-3">
+            <div class="text-data-warper">
+              <h2>T-SHIRTS</h2>
+              <h3>New Collection April 2024</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= Three Banner Section End Here =========== -->
+
+    <!-- ========= News Letters Section Starts Here =========== -->
+    <section class="news-letter-section">
+      <div class="container">
+        <div class="text-data-warper">
+          <h4>Sign Up For Newsletters</h4>
+          <p>
+            Get E-mail updates about out latest and
+            <a href="#" class="text-decoration-none">spacial offers.</a>
+          </p>
+        </div>
+        <div class="input-box">
+          <div class="input">
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Enter your email"
+            />
+            <button type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= News Letters Section End Here =========== -->
+
+    <!-- ========= Footer Section Start Here =========== -->
+    <div class="footer-section">
+      <div class="container pt-5">
+        <div class="logo">
+          <h2><a href="#">Shopping</a></h2>
+        </div>
+        <div class="row pt-4 row-container">
+          <div class="col-md-3 mb-4">
+            <div class="contact-data">
+              <h3>Contact</h3>
+              <p>
+                <b>Address:</b> 421 Wellington Road Street 33, San Francisco
+              </p>
+              <p><b>Phone:</b> +012222365</p>
+              <p><b>Hours:</b> 10:00AM - 18:00PM Mon - Sat</p>
+              <div class="social-data">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="about-data">
+              <h3>About</h3>
+              <p><a href="#">About Us</a></p>
+              <p><a href="#">Delivery Information</a></p>
+              <p><a href="#">Privacy Policy</a></p>
+              <p><a href="#">Terms & Conditions</a></p>
+              <p><a href="#">Contact Us</a></p>
+              <p class="mt-3 fs-6 text-dark">© All reserved shopping.com</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="my-account">
+              <h3>My Account</h3>
+              <p><a href="#">Sign in</a></p>
+              <p><a href="#">View Cart</a></p>
+              <p><a href="#">My Wishlist</a></p>
+              <p><a href="#">Track My Order</a></p>
+              <p><a href="#">Help</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="install-app">
+              <h3>Install App</h3>
+              <p>From App Store or Google Play</p>
+              <div class="download">
+                <img src="./Images/pay/app.jpg" alt="" />
+                <img src="./Images/pay/play.jpg" alt="" />
+              </div>
+              <div class="payment">
+                <p>Secured Payment Gateways</p>
+                <img src="./Images/pay/pay.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========= Footer Section End Here =========== -->
+  </body>
+</html>

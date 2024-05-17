@@ -1,0 +1,196 @@
+/* =============== Google Font Link  =============== */
+/* font-family link  */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+
+/*   font-family: "Poppins", sans-serif; */
+/* font-family: "Kaushan Script", cursive; */
+/* font-family: "League Spartan", sans-serif; */
+
+/* =============== CSS Reset Code ============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variable code */
+:root {
+  --popFont: "Poppins", sans-serif;
+  --kaushan: "Kaushan Script", cursive;
+  --spartan: "League Spartan", sans-serif;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --logoColor: #048679;
+  --headingCol: rgb(253, 0, 253);
+}
+
+/* ========== Products Page Design Start Here ========= */
+.products-page-design {
+  padding-top: 8rem;
+}
+.products-page-design .product-page-warper .small-images {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  img {
+    width: 80px;
+    height: 80px;
+    border: 1.5px solid #048679;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px rgb(236, 236, 236);
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  img:hover {
+    transform: scale(1.02);
+  }
+}
+
+.products-page-design .product-page-warper {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 2.5rem;
+}
+
+.products-page-design .product-page-warper .main-images {
+  img {
+    max-width: 450px;
+    height: 440px;
+    box-shadow: 2px 2px 3px #b2b2b2;
+    border-radius: 4px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  img:hover {
+    transform: scale(1.08);
+  }
+}
+.products-page-design .product-page-warper .text-warper {
+  padding-right: 5rem;
+  margin-top: 1rem;
+  font-family: var(--popFont);
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+  }
+  a:hover {
+    color: rgb(11, 102, 238);
+  }
+  h4 {
+    font-size: 1.7rem;
+    color: rgb(4, 4, 43);
+    del {
+      color: grey;
+    }
+  }
+  .select-size {
+    width: 150px;
+    height: 37px;
+    border: 1px solid #c7c6c6;
+    padding: 0 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #c1c1c1;
+    outline: none;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .add-to-card {
+    margin-bottom: 1rem;
+    input {
+      width: 100px;
+      height: 44px;
+      border: 1px solid #c7c6c6;
+      padding: 0 10px;
+      border-radius: 4px;
+      box-shadow: 2px 2px 3px #c1c1c1;
+      outline: none;
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    button {
+      width: 130px;
+      height: 44px;
+      border: 1px solid #c7c6c6;
+      padding: 0 10px;
+      border-radius: 4px;
+      box-shadow: 2px 2px 3px #c1c1c1;
+      outline: none;
+      background-color: var(--logoColor);
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.4s;
+    }
+    button:hover {
+      background-color: #0d6960;
+    }
+  }
+  .p-text {
+    margin-top: 2rem;
+    h3 {
+      font-size: 1.4rem;
+      color: rgb(4, 4, 43);
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 15px;
+      color: grey;
+      letter-spacing: 0.6px;
+      line-height: 22px;
+    }
+  }
+}
+/* ========== Products Page Design End Here ========= */
+/* ========== Responsive Design Start Here ========= */
+@media only screen and (max-width: 768px) {
+  .products-page-design .product-page-warper {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-page-design .product-page-warper .small-images {
+    display: flex;
+    flex-direction: row;
+  }
+  .products-page-design .product-page-warper .product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .text-warper {
+      padding-right: 0;
+      * {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .products-page-design .product-page-warper .main-images {
+    img {
+      width: 450px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .products-page-design .product-page-warper {
+    .main-images {
+      img {
+        width: 300px;
+      }
+    }
+    .text-warper {
+      padding-right: 0;
+      * {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+/* ========== Responsive Design End Here ========= */

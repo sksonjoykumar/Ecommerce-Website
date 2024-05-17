@@ -1,0 +1,213 @@
+/* =============== Google Font Link  =============== */
+/* font-family link  */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+
+/*   font-family: "Poppins", sans-serif; */
+/* font-family: "Kaushan Script", cursive; */
+/* font-family: "League Spartan", sans-serif; */
+
+/* =============== CSS Reset Code ============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variable code */
+:root {
+  --popFont: "Poppins", sans-serif;
+  --kaushan: "Kaushan Script", cursive;
+  --spartan: "League Spartan", sans-serif;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --logoColor: #048679;
+  --headingCol: rgb(253, 0, 253);
+}
+/* ======== Heading Section Start Here ========= */
+.shop-heading-section {
+  margin-top: 4rem;
+  width: 100%;
+  height: 40vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(137, 137, 248, 0.279)
+    ),
+    url(./Images/my-banner/3804065.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-heading-section .shop-text {
+  text-align: center;
+
+  h2 {
+    font-family: var(--kaushan);
+    font-size: 5rem;
+    color: #fff;
+  }
+}
+/* ======== Heading Section End Here ========= */
+
+/* ========== Contact With Us Section Start Here ======== */
+.contract-section {
+  margin-top: 3.5rem;
+
+  .heading {
+    text-align: center;
+    h1 {
+      font-family: var(--kaushan);
+      font-size: 4rem;
+      color: var(--logoColor);
+    }
+  }
+}
+
+.contract-section .text-container {
+  padding: 10px;
+  font-family: var(--popFont);
+  color: rgb(4, 4, 26);
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-size: 500;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: rgb(84, 84, 84);
+    i {
+      font-size: 1.1rem;
+      margin-right: 5px;
+      color: #048679;
+    }
+  }
+}
+
+.contract-section .map-container {
+  iframe {
+    width: 100%;
+    height: 450px;
+    border: 2px solid #ddd;
+    box-shadow: 2px 2px 3px #878787;
+    border-radius: 5px;
+  }
+}
+/* ========== Contact With Us Section End Here ======== */
+
+/* ========== Form Section Start Here ========== */
+.form-section {
+  margin-top: 3rem;
+  .form-warper {
+    h3 {
+      font-family: var(--kaushan);
+      font-size: 3.5rem;
+      color: var(--logoColor);
+    }
+  }
+}
+
+.form-section .form-warper form {
+  margin-top: 2rem;
+  border: 2px solid #ddd;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #e6e6e6;
+
+  label {
+    margin: 1rem 0;
+  }
+
+  input {
+    padding: 10px;
+  }
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+  button {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-family: var(--popFont);
+    font-size: 15px;
+    background-color: var(--logoColor);
+    color: var(--whiteColor);
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  button:hover {
+    background-color: #119285;
+  }
+}
+
+.form-section .review-warper {
+  margin-top: 6rem;
+  display: flex;
+  gap: 15px;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.form-section .review-warper .card {
+  padding: 20px;
+  box-shadow: 2px 2px 3px #e6e6e6;
+  transition: all 0.5s;
+  img {
+    margin: 0 auto;
+    width: 100px;
+  }
+}
+.form-section .review-warper .card:hover {
+  transform: scale(1.03);
+}
+
+.form-section .review-warper .card .text-data {
+  margin-top: 15px;
+  h5 {
+    color: rgb(5, 5, 39);
+    font-family: var(--popFont);
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 7px 0;
+  }
+}
+
+.form-section .warper {
+  margin-top: 0;
+}
+/* ========== Form Section End Here ========== */
+
+/* Responsive Design  */
+
+@media only screen and (max-width: 450px) {
+  .shop-heading-section .shop-text h2 {
+    font-size: 3rem;
+  }
+  .contract-section {
+    text-align: center;
+    .heading h1 {
+      font-size: 2.4rem;
+    }
+  }
+
+  .form-section .review-warper {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
